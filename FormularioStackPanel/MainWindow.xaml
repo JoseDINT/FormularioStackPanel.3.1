@@ -1,0 +1,55 @@
+﻿<Window x:Class="FormularioStackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormularioStackPanel"
+        mc:Ignorable="d"
+        Title="FormatoStackPanel" Height="450" MaxWidth="900" MinWidth="400">
+    <StackPanel>
+        <!--Panel 1-->
+        <Border Padding="0,0,0,15" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF3AE076" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.97"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel>
+                <Label FontSize="16" FontWeight="Bold">Nombre</Label>
+                <TextBox Margin="5,0" MaxWidth="895"></TextBox>
+            </StackPanel>
+        </Border>
+        <!--Panel 2-->
+        <Border Padding="0,0,0,15" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF1DB4E0" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.97"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel>
+                <Label FontSize="16" FontWeight="Bold">Dirección</Label>
+                <TextBox Margin="5,0" MaxWidth="895"></TextBox>
+            </StackPanel>
+        </Border>
+        <!--Panel 3-->
+        <Border Padding="0,0,0,15" Margin="10">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF75C5C" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.97"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel>
+                <Label FontSize="16" FontWeight="Bold">Correo electrónico</Label>
+                <TextBox Margin="5,0" MinWidth="600"  HorizontalAlignment="Left" ></TextBox>
+            </StackPanel>
+        </Border>
+        <!--Botones-->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button  MinWidth="100" Content="Aceptar"/>
+            <Button  MinWidth="100" Margin="10,0" Content="Cancelar"></Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
