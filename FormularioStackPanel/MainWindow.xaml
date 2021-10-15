@@ -6,50 +6,34 @@
         xmlns:local="clr-namespace:FormularioStackPanel"
         mc:Ignorable="d"
         Title="FormatoStackPanel" Height="450" MaxWidth="900" MinWidth="400">
+    
     <StackPanel>
         <!--Panel 1-->
-        <Border Padding="0,0,0,15" Margin="10">
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF3AE076" Offset="0"/>
-                    <GradientStop Color="White" Offset="0.97"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        <Border Style="{StaticResource Border01Style}">
             <StackPanel>
-                <Label FontSize="16" FontWeight="Bold">Nombre</Label>
-                <TextBox Margin="5,0" MaxWidth="895"></TextBox>
+                <Label Style="{StaticResource LabelStyle}">Nombre</Label>
+                <TextBox Style="{StaticResource TextBoxStyle}"></TextBox>
             </StackPanel>
         </Border>
         <!--Panel 2-->
-        <Border Padding="0,0,0,15" Margin="10">
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF1DB4E0" Offset="0"/>
-                    <GradientStop Color="White" Offset="0.97"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        <Border Style="{StaticResource Border02Style}">
             <StackPanel>
-                <Label FontSize="16" FontWeight="Bold">Dirección</Label>
-                <TextBox Margin="5,0" MaxWidth="895"></TextBox>
+                <Label Style="{StaticResource LabelStyle}">Dirección</Label>
+                <TextBox Style="{StaticResource TextBox01Style}"></TextBox>
             </StackPanel>
         </Border>
         <!--Panel 3-->
-        <Border Padding="0,0,0,15" Margin="10">
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FFF75C5C" Offset="0"/>
-                    <GradientStop Color="White" Offset="0.97"/>
-                </LinearGradientBrush>
-            </Border.Background>
+        <Border Style="{StaticResource Border03Style}">
+            
             <StackPanel>
-                <Label FontSize="16" FontWeight="Bold">Correo electrónico</Label>
-                <TextBox Margin="5,0" MinWidth="600"  HorizontalAlignment="Left" ></TextBox>
+                <Label Style="{StaticResource LabelStyle}">Correo electrónico</Label>
+                <TextBox Style="{StaticResource TextBox02Style}"></TextBox>
             </StackPanel>
         </Border>
         <!--Botones-->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button  MinWidth="100" Content="Aceptar"/>
-            <Button  MinWidth="100" Margin="10,0" Content="Cancelar"></Button>
+        <StackPanel Style="{StaticResource BotonesStackPanel}">
+            <Button  Style="{StaticResource Button}">Aceptar</Button>
+            <Button  Style="{StaticResource CancelarButton}">Cancelar</Button>
         </StackPanel>
     </StackPanel>
 </Window>
